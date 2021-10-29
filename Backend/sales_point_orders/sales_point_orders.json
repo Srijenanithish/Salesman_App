@@ -1,0 +1,300 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-10-19 17:54:32.453987",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "salespoint",
+  "salespoint_name",
+  "data_5",
+  "company",
+  "transaction_date",
+  "delivery_date",
+  "amended_from",
+  "location",
+  "images_section",
+  "images",
+  "sec_warehouse",
+  "set_warehouse",
+  "items_section",
+  "items",
+  "data_19",
+  "data_20",
+  "total_quantity",
+  "column_break_20",
+  "total",
+  "net_total",
+  "data_17",
+  "data_22",
+  "additional_discount_and_coupon_code_section",
+  "data_26",
+  "apply_additional_discount_on",
+  "data_27",
+  "column_break_28",
+  "additional_discount_percentage",
+  "additional_discount_amount",
+  "section_break_32",
+  "column_break_31",
+  "grand_total_company_currency",
+  "rounding_adjustment_company_currency",
+  "data_35",
+  "in_words_company_currency",
+  "feedback_section",
+  "feedback",
+  "primary_sales_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SP-ORD-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sales Point Orders",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Small Text",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Table",
+   "label": "Images",
+   "options": "Attachments"
+  },
+  {
+   "fieldname": "feedback_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_warehouse",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "set_warehouse",
+   "fieldtype": "Link",
+   "label": "Set Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "data_17",
+   "fieldtype": "Section Break",
+   "label": "Billing and Delivery Status"
+  },
+  {
+   "fieldname": "data_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Sales Point Orders Items",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Currency",
+   "label": "Net Total"
+  },
+  {
+   "fieldname": "data_26",
+   "fieldtype": "Link",
+   "label": "Coupon Code",
+   "options": "Coupon Code"
+  },
+  {
+   "fieldname": "apply_additional_discount_on",
+   "fieldtype": "Select",
+   "label": "Apply Additional Discount On",
+   "options": "\nGrand Total\nNet Total"
+  },
+  {
+   "fieldname": "data_27",
+   "fieldtype": "Currency",
+   "label": "Additional Discount Amount (Company Currency)"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_discount_percentage",
+   "fieldtype": "Float",
+   "label": "Additional Discount Percentage"
+  },
+  {
+   "fieldname": "additional_discount_amount",
+   "fieldtype": "Currency",
+   "label": "Additional Discount Amount"
+  },
+  {
+   "fieldname": "data_22",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nOn Hold\nTo Deliver and Bill\nTo Bill\nTo Deliver\nCompleted\nCancelled\nClosed"
+  },
+  {
+   "fieldname": "additional_discount_and_coupon_code_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Discount and Coupon Code"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grand_total_company_currency",
+   "fieldtype": "Currency",
+   "label": "Grand Total ",
+   "print_hide": 1,
+   "width": "150px"
+  },
+  {
+   "fieldname": "rounding_adjustment_company_currency",
+   "fieldtype": "Currency",
+   "label": "Rounding Adjustment ",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "data_35",
+   "fieldtype": "Currency",
+   "label": "Rounded Total ",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "in_words_company_currency",
+   "fieldtype": "Data",
+   "label": "In Words ",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1,
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "images_section",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "primary_sales_order",
+   "fieldtype": "Link",
+   "label": "Primary Sales Order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salespoint",
+   "fieldtype": "Link",
+   "label": "Salespoint",
+   "options": "Sales Point",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "salespoint.customer_name",
+   "fieldname": "salespoint_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Salespoint Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-10-29 10:33:03.612088",
+ "modified_by": "Administrator",
+ "module": "Salesman",
+ "name": "Sales Point Orders",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}

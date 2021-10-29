@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-10-22 17:13:18.296581",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "images"
+ ],
+ "fields": [
+  {
+   "fieldname": "images",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Images"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-10-22 17:23:17.472973",
+ "modified_by": "Administrator",
+ "module": "Salesman",
+ "name": "Attachments",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
